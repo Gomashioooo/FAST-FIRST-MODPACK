@@ -1,0 +1,532 @@
+{
+	autofocus_id: "21DADB10AE8C2233"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "faaaaaaaaaaaaaaaaaaaaaaaaaaaaaaast"
+	group: ""
+	id: "19F18D64DF49B6AD"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "57BF756BEF4E23DA"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/effect give @p minecraft:speed infinite 10 true"
+					id: "72ABB50B04B467F0"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/gamerule doTraderSpawning false"
+					id: "5B7DF47D56D5CF59"
+					type: "command"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "3481C9630BA748C0"
+				type: "dimension"
+			}]
+			title: "爆速の要"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["290602FE0503C20D"]
+			id: "3E446B05AF55611B"
+			size: 5.0d
+			tasks: [{
+				id: "3D0474C01D2E3F58"
+				item: "minecraft:tall_grass"
+				type: "item"
+			}]
+			title: "草生える"
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			description: ["【不明なコマンドと出た人は、チートモードをONにして再走してください】"]
+			id: "307606AE516B49B3"
+			rewards: [
+				{
+					count: 2
+					id: "3D6E94E72F38F253"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "4C1867B90DFAB14C"
+					item: "botanypotstiers:creative_terracotta_hopper_botany_pot"
+					type: "item"
+				}
+				{
+					id: "3BF664EB72671074"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			size: 5.0d
+			tasks: [{
+				id: "11ABCB9227CF67C6"
+				title: "a"
+				type: "checkmark"
+			}]
+			title: "クエストは雑"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["307606AE516B49B3"]
+			id: "6647310938DEBA8D"
+			tasks: [
+				{
+					id: "649EB6DE243D9835"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+				{
+					id: "6031C16DF49C83A8"
+					item: "mekanismgenerators:heat_generator"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6647310938DEBA8D"]
+			id: "009EE3A4B6D5D400"
+			tasks: [
+				{
+					id: "49B2EAF1015F552A"
+					item: "mekanism:electric_pump"
+					type: "item"
+				}
+				{
+					id: "7791CBE904C56759"
+					item: "mekanism:electrolytic_separator"
+					type: "item"
+				}
+				{
+					id: "0F74FC820866BBE5"
+					item: "mekanism:pressurized_reaction_chamber"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["009EE3A4B6D5D400"]
+			id: "5FDF47FEDF90A642"
+			tasks: [{
+				id: "440180370EF6B08E"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5FDF47FEDF90A642"
+				"665A89C88A77E9FF"
+				"3556D49DEB17293D"
+			]
+			id: "5AA7868EFA5890A2"
+			tasks: [{
+				id: "7E842E1862A30E29"
+				item: {
+					Count: 1
+					id: "mekanism:creative_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+							componentConfig: {
+								config0: {
+									side0: 4
+									side1: 4
+									side2: 4
+									side3: 4
+									side4: 4
+									side5: 4
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["307606AE516B49B3"]
+			id: "116037B7FD969FF4"
+			tasks: [
+				{
+					count: 27L
+					id: "65521263B748CB4C"
+					item: { Count: 27, id: "immersiveengineering:cokebrick" }
+					type: "item"
+				}
+				{
+					id: "38EBE44F018277E3"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["116037B7FD969FF4"]
+			id: "15ADFCE17C99A65C"
+			tasks: [{
+				count: 27L
+				id: "615696F9419775C3"
+				item: { Count: 27, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["15ADFCE17C99A65C"]
+			id: "665A89C88A77E9FF"
+			tasks: [{
+				id: "219A7A7E2DB6BD7F"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["307606AE516B49B3"]
+			id: "04D953B0D86AA8F0"
+			tasks: [
+				{
+					id: "3D8C72E242126D3A"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "648328539CCEAD31"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7981704E1321F69F"]
+			id: "3556D49DEB17293D"
+			tasks: [
+				{
+					id: "1D992C5DE2CA3239"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "11122E7F9FFCAEF6"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "59C8C0131A602507"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "219CB03150EC0E4F"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+				{
+					id: "365E1E72DD341109"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["04D953B0D86AA8F0"]
+			id: "7981704E1321F69F"
+			tasks: [{
+				id: "45970828120BB175"
+				item: "ae2:sky_stone_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["665A89C88A77E9FF"]
+			id: "6F7AC288F8DAD26D"
+			tasks: [{
+				count: 8L
+				id: "47538CB9313E4F4C"
+				item: { Count: 8, id: "immersiveengineering:alloybrick" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6F7AC288F8DAD26D"]
+			id: "7CFC0FF6BC449943"
+			tasks: [
+				{
+					id: "4F7631FC0C09D8D1"
+					item: "immersiveengineering:ingot_electrum"
+					type: "item"
+				}
+				{
+					id: "0124321DFA14433E"
+					item: "immersiveengineering:ingot_constantan"
+					type: "item"
+				}
+			]
+			title: "God king"
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CFC0FF6BC449943"]
+			id: "178474F6057E4E35"
+			tasks: [
+				{
+					id: "5D3083244BCCAFAA"
+					item: "immersiveengineering:sheetmetal_constantan"
+					type: "item"
+				}
+				{
+					id: "409E109A7896E5A1"
+					item: "immersiveengineering:sheetmetal_electrum"
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"178474F6057E4E35"
+				"6309B6B7C524A71B"
+				"50F0A497F544A76A"
+			]
+			id: "6C6AFF3EEBFEF067"
+			tasks: [{
+				id: "7BE2EBA9C364077F"
+				item: "mekanism:creative_fluid_tank"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3556D49DEB17293D"]
+			id: "4FF8095C1CB4EA43"
+			tasks: [{
+				id: "759888E24FBDD4A1"
+				item: "ae2:fluix_pearl"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6D935BB15ACAC061"]
+			id: "6309B6B7C524A71B"
+			tasks: [{
+				id: "629758C8C337BC45"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4FF8095C1CB4EA43"]
+			id: "6D935BB15ACAC061"
+			tasks: [{
+				id: "1531A80E9467A8D3"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5AA7868EFA5890A2"]
+			id: "0BF4D3DD60D76D1F"
+			tasks: [{
+				id: "3801E27C45DCC1C9"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BF4D3DD60D76D1F"]
+			id: "21DADB10AE8C2233"
+			tasks: [{
+				id: "42BFE8B300F0B0CE"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21DADB10AE8C2233"]
+			id: "50F0A497F544A76A"
+			tasks: [
+				{
+					id: "539E501B097CC91B"
+					item: "mekanism:osmium_compressor"
+					type: "item"
+				}
+				{
+					id: "2FBE6AEFD4F41F93"
+					item: "mekanism:ingot_refined_obsidian"
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2E3D12DF49E567C2"
+				"1FBA003E24456CCB"
+				"6CC677CA304155D6"
+			]
+			id: "290602FE0503C20D"
+			tasks: [{
+				id: "36BFA7D53288FBB4"
+				item: "extendedcrafting:epic_table"
+				type: "item"
+			}]
+			x: 26.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C49704F9C43A7A5"]
+			id: "64B867D31056FE5D"
+			tasks: [{
+				id: "72E8DEF15F5EB9A4"
+				item: "immersiveengineering:circuit_board"
+				type: "item"
+			}]
+			x: 22.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["178474F6057E4E35"]
+			id: "3C49704F9C43A7A5"
+			tasks: [{
+				id: "5D360152B517EC3B"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64B867D31056FE5D"]
+			id: "2E3D12DF49E567C2"
+			tasks: [{
+				id: "6DC4846C2A68DC99"
+				item: "immersiveengineering:logic_circuit"
+				type: "item"
+			}]
+			x: 24.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["39C10DE8EB3ED371"]
+			id: "1FBA003E24456CCB"
+			tasks: [{
+				id: "0E6E81D4628B1C72"
+				item: "mekanism_extras:infinite_control_circuit"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D79C0DF2A052815"]
+			id: "39C10DE8EB3ED371"
+			tasks: [{
+				id: "5D105A9C87C0433C"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C6AFF3EEBFEF067"]
+			id: "2D79C0DF2A052815"
+			tasks: [{
+				id: "69615495072FA13A"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6309B6B7C524A71B"]
+			id: "453351F9DCF478E2"
+			tasks: [{
+				id: "314603A4EADCF712"
+				item: "ae2:quantum_entangled_singularity"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["453351F9DCF478E2"]
+			id: "36AE525A76B72DAD"
+			tasks: [{
+				id: "6F6A9A8745656D63"
+				item: "ae2:engineering_processor"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["36AE525A76B72DAD"]
+			id: "6CC677CA304155D6"
+			tasks: [{
+				id: "4EA19364C53FE4FE"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 2.0d
+		}
+	]
+	title: "FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAST"
+}
