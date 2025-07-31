@@ -13,7 +13,7 @@
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/effect give @p minecraft:speed infinite 10 true"
+					command: "/effect give @p minecraft:speed infinite 20 true"
 					id: "72ABB50B04B467F0"
 					type: "command"
 				}
@@ -67,6 +67,12 @@
 					item: "immersiveengineering:manual"
 					type: "item"
 				}
+				{
+					count: 5
+					id: "5E76B800161A252B"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
 			]
 			size: 5.0d
 			tasks: [{
@@ -80,6 +86,7 @@
 		}
 		{
 			dependencies: ["307606AE516B49B3"]
+			icon: "mekanism:crusher"
 			id: "6647310938DEBA8D"
 			tasks: [
 				{
@@ -93,11 +100,13 @@
 					type: "item"
 				}
 			]
+			title: "大喝采☆"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6647310938DEBA8D"]
+			icon: "mekanism:pressurized_reaction_chamber"
 			id: "009EE3A4B6D5D400"
 			tasks: [
 				{
@@ -116,6 +125,7 @@
 					type: "item"
 				}
 			]
+			title: "加圧か！あつ"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -127,6 +137,7 @@
 				item: "mekanismgenerators:gas_burning_generator"
 				type: "item"
 			}]
+			title: "ガスが勝つ希ガス"
 			x: 8.0d
 			y: 0.0d
 		}
@@ -163,6 +174,7 @@
 				}
 				type: "item"
 			}]
+			title: "クリエだイエイ"
 			x: 10.0d
 			y: 0.0d
 		}
@@ -188,6 +200,7 @@
 					type: "item"
 				}
 			]
+			title: "いまーしぶ！"
 			x: 4.0d
 			y: -2.0d
 		}
@@ -200,6 +213,7 @@
 				item: { Count: 27, id: "immersiveengineering:blastbrick" }
 				type: "item"
 			}]
+			title: "高炉に功労賞"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -211,11 +225,13 @@
 				item: "immersiveengineering:ingot_steel"
 				type: "item"
 			}]
+			title: "鋼鉄の工程"
 			x: 8.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["307606AE516B49B3"]
+			icon: "ae2:charged_certus_quartz_crystal"
 			id: "04D953B0D86AA8F0"
 			tasks: [
 				{
@@ -229,6 +245,7 @@
 					type: "item"
 				}
 			]
+			title: "チャッチャと片付けちゃって"
 			x: 4.0d
 			y: 2.0d
 		}
@@ -262,6 +279,7 @@
 					type: "item"
 				}
 			]
+			title: "金型がなかった"
 			x: 8.0d
 			y: 2.0d
 		}
@@ -273,6 +291,7 @@
 				item: "ae2:sky_stone_block"
 				type: "item"
 			}]
+			title: "こんなんでいいんでスカイ"
 			x: 6.0d
 			y: 2.0d
 		}
@@ -285,6 +304,7 @@
 				item: { Count: 8, id: "immersiveengineering:alloybrick" }
 				type: "item"
 			}]
+			title: "耐熱にしたいね"
 			x: 12.0d
 			y: -2.0d
 		}
@@ -322,6 +342,7 @@
 					type: "item"
 				}
 			]
+			title: "板金にヘッドバンキング"
 			x: 16.0d
 			y: -2.0d
 		}
@@ -337,6 +358,7 @@
 				item: "mekanism:creative_fluid_tank"
 				type: "item"
 			}]
+			title: "エンドコンテンツ感"
 			x: 18.0d
 			y: 0.0d
 		}
@@ -348,6 +370,7 @@
 				item: "ae2:fluix_pearl"
 				type: "item"
 			}]
+			title: "パールを配ーる"
 			x: 12.0d
 			y: 2.0d
 		}
@@ -359,6 +382,7 @@
 				item: "ae2:singularity"
 				type: "item"
 			}]
+			title: "特異点が得意です"
 			x: 16.0d
 			y: 2.0d
 		}
@@ -370,6 +394,7 @@
 				item: "ae2:condenser"
 				type: "item"
 			}]
+			title: "マターが作れる？またまたー"
 			x: 14.0d
 			y: 2.0d
 		}
@@ -381,6 +406,7 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
+			title: "夜勤だ"
 			x: 12.0d
 			y: 0.0d
 		}
@@ -388,15 +414,17 @@
 			dependencies: ["0BF4D3DD60D76D1F"]
 			id: "21DADB10AE8C2233"
 			tasks: [{
-				id: "42BFE8B300F0B0CE"
-				item: "mekanism:crusher"
+				id: "270DA7BEAC764BF5"
+				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
+			title: "上から見たいちご"
 			x: 14.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["21DADB10AE8C2233"]
+			icon: "mekanism:osmium_compressor"
 			id: "50F0A497F544A76A"
 			tasks: [
 				{
@@ -410,6 +438,7 @@
 					type: "item"
 				}
 			]
+			title: "オスミウムで押す"
 			x: 16.0d
 			y: 0.0d
 		}
@@ -425,6 +454,7 @@
 				item: "extendedcrafting:epic_table"
 				type: "item"
 			}]
+			title: "あえてEpicをピック"
 			x: 26.0d
 			y: 0.0d
 		}
@@ -436,6 +466,7 @@
 				item: "immersiveengineering:circuit_board"
 				type: "item"
 			}]
+			title: "回路制作開始"
 			x: 22.0d
 			y: -2.0d
 		}
@@ -447,6 +478,7 @@
 				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
+			title: "ラストが近まる"
 			x: 20.0d
 			y: -2.0d
 		}
@@ -458,6 +490,7 @@
 				item: "immersiveengineering:logic_circuit"
 				type: "item"
 			}]
+			title: "lonelyな論理"
 			x: 24.0d
 			y: -2.0d
 		}
@@ -469,6 +502,7 @@
 				item: "mekanism_extras:infinite_control_circuit"
 				type: "item"
 			}]
+			title: "きらきら"
 			x: 24.0d
 			y: 0.0d
 		}
@@ -480,6 +514,7 @@
 				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
+			title: "上から見た...何...これ..."
 			x: 22.0d
 			y: 0.0d
 		}
@@ -491,6 +526,7 @@
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
+			title: "原始的ではない"
 			x: 20.0d
 			y: 0.0d
 		}
@@ -502,6 +538,7 @@
 				item: "ae2:quantum_entangled_singularity"
 				type: "item"
 			}]
+			title: "量子を利用し"
 			x: 20.0d
 			y: 2.0d
 		}
@@ -509,10 +546,11 @@
 			dependencies: ["453351F9DCF478E2"]
 			id: "36AE525A76B72DAD"
 			tasks: [{
-				id: "6F6A9A8745656D63"
-				item: "ae2:engineering_processor"
+				id: "44446F478B259089"
+				item: "ae2:tiny_tnt"
 				type: "item"
 			}]
+			title: "極小っぽくしよう"
 			x: 22.0d
 			y: 2.0d
 		}
@@ -524,6 +562,7 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
+			title: "[ダジャレ募集中]"
 			x: 24.0d
 			y: 2.0d
 		}
