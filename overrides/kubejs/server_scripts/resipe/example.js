@@ -333,6 +333,17 @@ event.shaped(
   }
 )
 event.shaped(
+  Item.of('minecraft:ender_pearl', 1), // arg 1: output
+  [
+    'AA ',
+    'AA ', // arg 2: the shape (array of strings)
+    '   '
+  ],
+  {
+    A: 'minecraft:glass'
+  }
+)
+event.shaped(
     Item.of('mekanism:creative_energy_cube', '{mekData:{EnergyContainers:[{Container:0b,stored:"18446744073709551615.9999"}],componentConfig:{config0:{side0:4,side1:4,side2:4,side3:4,side4:4,side5:4}}}}'), // arg 1: output
   [
     'ABA',

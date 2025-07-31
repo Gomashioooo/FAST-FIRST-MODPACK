@@ -9,21 +9,14 @@
 	quest_links: [ ]
 	quests: [
 		{
+			can_repeat: true
 			id: "57BF756BEF4E23DA"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/effect give @p minecraft:speed infinite 20 true"
-					id: "72ABB50B04B467F0"
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/gamerule doTraderSpawning false"
-					id: "5B7DF47D56D5CF59"
-					type: "command"
-				}
-			]
+			rewards: [{
+				auto: "enabled"
+				command: "/effect give @p minecraft:speed infinite 20 true"
+				id: "72ABB50B04B467F0"
+				type: "command"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "3481C9630BA748C0"
@@ -31,7 +24,7 @@
 			}]
 			title: "爆速の要"
 			x: -4.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["290602FE0503C20D"]
@@ -47,7 +40,10 @@
 			y: 0.0d
 		}
 		{
-			description: ["【不明なコマンドと出た人は、チートモードをONにして再走してください】"]
+			description: [
+				"【不明なコマンドと出た人は、チートモードをONにして再走してください】"
+				"(対象に効果を～は無視してok)"
+			]
 			id: "307606AE516B49B3"
 			rewards: [
 				{
@@ -57,7 +53,7 @@
 					type: "item"
 				}
 				{
-					count: 10
+					count: 12
 					id: "4C1867B90DFAB14C"
 					item: "botanypotstiers:creative_terracotta_hopper_botany_pot"
 					type: "item"
@@ -71,6 +67,17 @@
 					count: 5
 					id: "5E76B800161A252B"
 					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "7416B672C215D2AD"
+					item: "minecraft:white_bed"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3CDD5F45270303F8"
+					item: "minecraft:quartz"
 					type: "item"
 				}
 			]
@@ -180,6 +187,13 @@
 		}
 		{
 			dependencies: ["307606AE516B49B3"]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "116037B7FD969FF4"
 			tasks: [
 				{
@@ -251,6 +265,7 @@
 		}
 		{
 			dependencies: ["7981704E1321F69F"]
+			icon: "ae2:inscriber"
 			id: "3556D49DEB17293D"
 			tasks: [
 				{
@@ -565,6 +580,23 @@
 			title: "[ダジャレ募集中]"
 			x: 24.0d
 			y: 2.0d
+		}
+		{
+			id: "2A6DAD4B154F6655"
+			rewards: [{
+				auto: "enabled"
+				command: "/gamerule doTraderSpawning false"
+				id: "6F8C0257E7E8E409"
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "23730AABA7860120"
+				type: "dimension"
+			}]
+			title: "対策"
+			x: -4.0d
+			y: 1.0d
 		}
 	]
 	title: "FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAST"
