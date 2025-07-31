@@ -9,24 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			can_repeat: true
-			id: "57BF756BEF4E23DA"
-			rewards: [{
-				auto: "enabled"
-				command: "/effect give @p minecraft:speed infinite 20 true"
-				id: "72ABB50B04B467F0"
-				type: "command"
-			}]
-			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "3481C9630BA748C0"
-				type: "dimension"
-			}]
-			title: "爆速の要"
-			x: -4.0d
-			y: -0.5d
-		}
-		{
 			dependencies: ["290602FE0503C20D"]
 			id: "3E446B05AF55611B"
 			size: 5.0d
@@ -597,6 +579,24 @@
 			title: "対策"
 			x: -4.0d
 			y: 1.0d
+		}
+		{
+			can_repeat: true
+			id: "28020841148F8F42"
+			rewards: [{
+				auto: "enabled"
+				command: "/effect give @e minecraft:speed 6 20 true"
+				id: "2AB6887CFCB18B6B"
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "62C23F0E6209F738"
+				type: "dimension"
+			}]
+			title: "爆速の要"
+			x: -4.0d
+			y: -0.5d
 		}
 	]
 	title: "FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAST"
